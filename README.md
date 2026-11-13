@@ -11,7 +11,7 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-market
 ## Install
 
 ```
-/plugin marketplace add viktoras25/agent-marketplace
+/plugin marketplace add viktoras25/skills
 /plugin install video-summary@viktoras25
 /plugin install language-tutor@viktoras25
 /plugin install language-memory@viktoras25
