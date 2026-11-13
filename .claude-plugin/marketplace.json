@@ -1,0 +1,41 @@
+{
+  "name": "viktoras25",
+  "description": "Viktoras Bezaras's agent skills and MCP servers",
+  "owner": { "name": "Viktoras Bezaras", "url": "https://github.com/viktoras25" },
+  "plugins": [
+    {
+      "name": "video-summary",
+      "source": { "source": "github", "repo": "viktoras25/video-summary-skill" },
+      "description": "Summarize any video from its URL by fetching its subtitles with yt-dlp",
+      "license": "MIT",
+      "homepage": "https://github.com/viktoras25/video-summary-skill",
+      "keywords": ["video", "youtube", "summary", "yt-dlp"]
+    },
+    {
+      "name": "language-tutor",
+      "source": { "source": "github", "repo": "viktoras25/language-tutor-skill" },
+      "description": "Turns the assistant into a language tutor: placement, small-step lessons, fair grading, adaptive pacing",
+      "homepage": "https://github.com/viktoras25/language-tutor-skill",
+      "keywords": ["language", "learning", "tutor"]
+    },
+    {
+      "name": "language-memory",
+      "source": { "source": "github", "repo": "viktoras25/language-tutor-mcp" },
+      "description": "Long-term memory MCP server for the language tutor: items, attempts, lessons, spaced repetition",
+      "homepage": "https://github.com/viktoras25/language-tutor-mcp",
+      "keywords": ["mcp", "language", "spaced-repetition"],
+      "userConfig": {
+        "server_url": {
+          "type": "string",
+          "title": "Server URL",
+          "description": "Your deployed server's connector URL, including the token: https://<worker>.workers.dev/mcp/<token>",
+          "required": true,
+          "sensitive": true
+        }
+      },
+      "mcpServers": {
+        "language-memory": { "type": "http", "url": "${user_config.server_url}" }
+      }
+    }
+  ]
+}
