@@ -1,29 +1,54 @@
 {
-  "name": "viktoras25",
+  "name": "viktoras",
   "description": "Viktoras Bezaras's agent skills and MCP servers",
-  "owner": { "name": "Viktoras Bezaras", "url": "https://github.com/viktoras25" },
+  "owner": {
+    "name": "Viktoras Bezaras",
+    "url": "https://github.com/viktoras25"
+  },
   "plugins": [
     {
       "name": "video-summary",
-      "source": { "source": "github", "repo": "viktoras25/video-summary-skill" },
+      "source": {
+        "source": "github",
+        "repo": "viktoras25/video-summary-skill"
+      },
       "description": "Summarize any video from its URL by fetching its subtitles with yt-dlp",
       "license": "MIT",
       "homepage": "https://github.com/viktoras25/video-summary-skill",
-      "keywords": ["video", "youtube", "summary", "yt-dlp"]
+      "keywords": [
+        "video",
+        "youtube",
+        "summary",
+        "yt-dlp"
+      ]
     },
     {
       "name": "language-tutor",
-      "source": { "source": "github", "repo": "viktoras25/language-tutor-skill" },
+      "source": {
+        "source": "github",
+        "repo": "viktoras25/language-tutor-skill"
+      },
       "description": "Turns the assistant into a language tutor: placement, small-step lessons, fair grading, adaptive pacing",
       "homepage": "https://github.com/viktoras25/language-tutor-skill",
-      "keywords": ["language", "learning", "tutor"]
+      "keywords": [
+        "language",
+        "learning",
+        "tutor"
+      ]
     },
     {
       "name": "language-memory",
-      "source": { "source": "github", "repo": "viktoras25/language-tutor-mcp" },
+      "source": {
+        "source": "github",
+        "repo": "viktoras25/language-tutor-mcp"
+      },
       "description": "Long-term memory MCP server for the language tutor: items, attempts, lessons, spaced repetition",
       "homepage": "https://github.com/viktoras25/language-tutor-mcp",
-      "keywords": ["mcp", "language", "spaced-repetition"],
+      "keywords": [
+        "mcp",
+        "language",
+        "spaced-repetition"
+      ],
       "userConfig": {
         "server_url": {
           "type": "string",
@@ -34,7 +59,10 @@
         }
       },
       "mcpServers": {
-        "language-memory": { "type": "http", "url": "${user_config.server_url}" }
+        "language-memory": {
+          "type": "http",
+          "url": "${user_config.server_url}"
+        }
       }
     }
   ]

@@ -1,4 +1,4 @@
-# viktoras25 marketplace
+# viktoras marketplace
 
 A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) that links my skills and MCP servers. Each plugin lives in its own repository; this repo only lists them.
 
@@ -12,13 +12,13 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-market
 
 ```
 /plugin marketplace add viktoras25/skills
-/plugin install video-summary@viktoras25
-/plugin install language-tutor@viktoras25
-/plugin install language-memory@viktoras25
+/plugin install video-summary@viktoras
+/plugin install language-tutor@viktoras
+/plugin install language-memory@viktoras
 ```
 
 `language-memory` connects to a server you deploy yourself (see its README) and asks for your connector URL on install. The URL contains your token, so it is stored in your system's secure credential store, not in settings.
 
-Update with `/plugin marketplace update viktoras25`.
+Update with `/plugin marketplace update viktoras`.
 
 Not using Claude Code? The skills are plain `SKILL.md` folders; copy them from their repositories into your agent's skills directory.
